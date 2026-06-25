@@ -14,8 +14,5 @@ amount_after_tip = bill + (bill * (tip/100))
 #calculating the amount each person should pay
 amount_per_person = amount_after_tip / people
 
-#rounding the amount each person should pay
-amount_rounded = round(amount_per_person, 2)
-
-#printing the amount each person should pay
-print(f"Each person should pay: ${amount_rounded}")
+#printing the amount each person should pay, formatted to 2 decimal places
+print(f"Each person should pay: ${amount_per_person:.2f}")
